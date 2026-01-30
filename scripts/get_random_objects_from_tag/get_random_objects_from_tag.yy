@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"get_random_objects_from_tag",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_random_objects_from_tag",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

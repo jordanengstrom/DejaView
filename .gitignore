@@ -61,5 +61,5 @@ Temporary Items
 # GMRT build directory
 Build
 
-deja-view-game/*
+deja-view-game/
 .DS_Store

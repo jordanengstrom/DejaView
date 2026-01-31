@@ -19,11 +19,11 @@
 //draw_set_halign(fa_left);
 //draw_set_valign(fa_top);
 
-// Background
+// Background 
 var _width = 335; 
 var _height = 180;
 
-var _x = 20;
+var _x = 20; 
 var _y = 20;
 
 draw_sprite_stretched(s_card_frame, 0, _x, _y, _width, _height);

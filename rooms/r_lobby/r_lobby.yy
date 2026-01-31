@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"r_lobby",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/r_lobby/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -50,10 +50,10 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":561,
+    "Height":584,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":376,
+    "Width":375,
   },
   "sequenceId":null,
   "views":[

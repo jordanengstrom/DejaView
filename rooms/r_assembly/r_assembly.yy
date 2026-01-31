@@ -13,7 +13,7 @@
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"assembly_layer","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_5D68F68A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D68F68A","objectId":{"name":"o_reset_button","path":"objects/o_reset_button/o_reset_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.15,"scaleY":0.15,"x":438.0,"y":495.0,},
+        {"$GMRInstance":"v4","%Name":"inst_5D68F68A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D68F68A","objectId":{"name":"o_reset_button","path":"objects/o_reset_button/o_reset_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.15,"scaleY":0.15,"x":247.0,"y":495.0,},
         {"$GMRInstance":"v4","%Name":"inst_308AF007","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_308AF007","objectId":{"name":"o_submit_button","path":"objects/o_submit_button/o_submit_button.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.15,"scaleY":0.15,"x":128.0,"y":495.0,},
         {"$GMRInstance":"v4","%Name":"inst_38D7D1C9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_38D7D1C9","objectId":{"name":"o_assembly_manager","path":"objects/o_assembly_manager/o_assembly_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":128.0,},
       ],"layers":[],"name":"assembly_layer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
@@ -53,7 +53,7 @@
     "Height":540,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":540,
+    "Width":375,
   },
   "sequenceId":null,
   "views":[

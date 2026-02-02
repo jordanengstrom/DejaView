@@ -1,3 +1,4 @@
+// UI SETTINGS
 var is_hovering = position_meeting(mouse_x, mouse_y, id);
 if (array_length(global.user_selection) < 5) {
     sprite_index = s_submit_button_inactive;

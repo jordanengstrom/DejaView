@@ -1,44 +1,48 @@
-var _margin = 20;
-var _card_w = room_width - (_margin * 2);
-var _card_h = 75;  
-var _gap = 10;     
-var _start_x = _margin; 
-var _start_y = _margin; 
-
-// Check for Left Mouse Click
+// Check for Click
 if (mouse_check_button_pressed(mb_left)) {
     var _mx = mouse_x;
     var _my = mouse_y;
 
-    // ------------------------------------------------
-    // 1. CHECK CARD CLICKS
-    // ------------------------------------------------
-    if (array_length(global.user_selection) < 5) {
+    // Loop through the cards to check hitboxes
+    for (var i = 0; i < array_length(global.display_order); i++) {
         
-        for (var i = 0; i < array_length(global.display_order); i++) {
-            // Hitbox
-            var _card_x1 = _start_x;
-            var _card_y1 = _start_y + (i * (_card_h + _gap));
-            var _card_x2 = _card_x1 + _card_w;
-            var _card_y2 = _card_y1 + _card_h;
+        // 1. Calculate Hitbox (Using variables from Create Event)
+        var _x1 = start_x;
+        var _y1 = start_y + (i * (card_h + gap));
+        var _x2 = _x1 + card_w;
+        var _y2 = _y1 + card_h;
+        
+        // 2. Check Collision
+        if (point_in_rectangle(_mx, _my, _x1, _y1, _x2, _y2)) {
             
-            if (point_in_rectangle(_mx, _my, _card_x1, _card_y1, _card_x2, _card_y2)) {
-                
-                var _clicked_val = global.display_order[i];
-                
-                // Check if already picked
-                var _already_picked = false;
-                for (var k = 0; k < array_length(global.user_selection); k++) {
-                    if (global.user_selection[k] == _clicked_val) {
-                        _already_picked = true;
-                        break;
-                    }
+            var _clicked_val = global.display_order[i];
+            
+            // 3. Find if card is already selected
+            // Returns index (0 to 4) or -1 if not found
+            var _index_in_selection = -1;
+            for (var k = 0; k < array_length(global.user_selection); k++) {
+                if (global.user_selection[k] == _clicked_val) {
+                    _index_in_selection = k;
+                    break;
                 }
-                
-                // Add to selection
-                if (!_already_picked) {
+            }
+            
+            // --- LOGIC: ADD NEW CARD ---
+            if (_index_in_selection == -1) {
+                if (array_length(global.user_selection) < 5) {
                     array_push(global.user_selection, _clicked_val);
-                    // Optional: Play Sound
+                    // audio_play_sound(snd_click, 1, false);
+                }
+            }
+            
+            // --- LOGIC: REMOVE LAST CARD ---
+            else {
+                var _last_pos = array_length(global.user_selection) - 1;
+                
+                // Only remove if it's the most recent addition
+                if (_index_in_selection == _last_pos) {
+                    array_pop(global.user_selection);
+                    // audio_play_sound(snd_undo, 1, false);
                 }
             }
         }

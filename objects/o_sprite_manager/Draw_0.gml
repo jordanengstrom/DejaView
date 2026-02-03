@@ -13,4 +13,4 @@ if (count < global.max_index && duration < frames) {
     var _final_y = _frame_y + (_frame_h - _img_size) / 2;
 	
 	draw_sprite_stretched(sprite_index, 0, _final_x, _final_y, _img_size, _img_size);
-} 
+}

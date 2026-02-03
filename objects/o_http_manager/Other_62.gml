@@ -1,4 +1,4 @@
-var _id = async_load[? "id"];
+ var _id = async_load[? "id"];
 
 var _callback = ds_map_find_value(requests, _id);
 

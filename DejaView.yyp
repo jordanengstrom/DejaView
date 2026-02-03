@@ -33,7 +33,6 @@
   },
   "name":"DejaView",
   "resources":[
-    {"id":{"name":"e_js_bridge","path":"extensions/e_js_bridge/e_js_bridge.yy",},},
     {"id":{"name":"o_armour","path":"objects/o_armour/o_armour.yy",},},
     {"id":{"name":"o_assembly_manager","path":"objects/o_assembly_manager/o_assembly_manager.yy",},},
     {"id":{"name":"o_axe_2","path":"objects/o_axe_2/o_axe_2.yy",},},
@@ -57,6 +56,7 @@
     {"id":{"name":"o_heart","path":"objects/o_heart/o_heart.yy",},},
     {"id":{"name":"o_helmet","path":"objects/o_helmet/o_helmet.yy",},},
     {"id":{"name":"o_http_manager","path":"objects/o_http_manager/o_http_manager.yy",},},
+    {"id":{"name":"o_leaderboard","path":"objects/o_leaderboard/o_leaderboard.yy",},},
     {"id":{"name":"o_map","path":"objects/o_map/o_map.yy",},},
     {"id":{"name":"o_play_button","path":"objects/o_play_button/o_play_button.yy",},},
     {"id":{"name":"o_potion_blue","path":"objects/o_potion_blue/o_potion_blue.yy",},},

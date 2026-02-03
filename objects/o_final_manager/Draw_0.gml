@@ -1,4 +1,4 @@
- var _margin = 20;
+var _margin = 20;
 var _x = _margin;
 var _y = _margin;
 var _width = room_width - (_margin * 2);
@@ -13,7 +13,7 @@ var _center_y = _y + (_height / 2);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-// Conditional Logic
+// Conditional Logic    
 // We check if "PERFECT" exists in the message to detect a win
 var _is_win = (string_pos("PERFECT", global.msg) > 0);
 
@@ -40,6 +40,21 @@ else {
 draw_set_color(make_color_rgb(234, 194, 130)); // Gold Color
 draw_text_transformed(_center_x, _center_y + 30, "SCORE: " + string(global.player_score), 1.5, 1.5, 0);
 
+// --- DRAW RANK ---
+if (!is_undefined(global.my_rank_info)) {
+    // The server calculates: rank = totalPlayers - ascRank
+    // So this value (e.g., 1, 2, 5) is ready to display directly.
+    var _my_rank = global.my_rank_info.rank;
+    var _best_score = global.my_rank_info.score; // The server returns your BEST score
+    
+    draw_set_color(c_ltgray);
+    draw_text_transformed(_center_x, _center_y + 60, "RANK: " + string(_my_rank), 1.2, 1.2, 0);
+    
+    // Optional: Show if the stored best is higher than the current run
+    if (_best_score > global.player_score) {
+         draw_text_transformed(_center_x, _center_y + 80, "(High Score: " + string(_best_score) + ")", 0.8, 0.8, 0);
+    }
+}
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

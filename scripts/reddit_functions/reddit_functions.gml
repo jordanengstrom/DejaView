@@ -1,4 +1,3 @@
-
 /// @desc This function allows you to get the base url where your game is running
 /// which is necessary when trying to access your reddit server side API.
 function reddit_get_base_url() {
@@ -49,18 +48,46 @@ function reddit_get_base_url() {
 /// @desc This function gives you the auth token necessary to pass into any calls to
 /// your server side API. This token needs to be added the the header map following the format:
 ///		header_map[? "Authorization"] = $"Bearer {<token>};
+//function reddit_get_token() {
+//	static _token = undefined;
+	
+//	if (!is_undefined(_token)) return _token;
+	
+//	_token = "noone";
+//	for (var _i = 0; _i < parameter_count(); ++_i) {
+//		var _param = parameter_string(_i);
+//		if (string_starts_with(_param, "token=")) {
+//			_token = string_delete(_param, 1, 6);
+//		}
+//	}
+	
+//	return _token;
+//}
+
+/// @desc Retrieves the auth token, checking both standard and Android-specific keys
 function reddit_get_token() {
-	static _token = undefined;
-	
-	if (!is_undefined(_token)) return _token;
-	
-	_token = "noone";
-	for (var _i = 0; _i < parameter_count(); ++_i) {
-		var _param = parameter_string(_i);
-		if (string_starts_with(_param, "token=")) {
-			_token = string_delete(_param, 1, 6);
-		}
-	}
-	
-	return _token;
+    static _token = undefined;
+    
+    if (!is_undefined(_token)) return _token;
+    
+    _token = "noone";
+    
+    for (var _i = 0; _i < parameter_count(); ++_i) {
+        var _param = parameter_string(_i);
+        
+        // 1. Standard Web/iOS Check
+        if (string_starts_with(_param, "token=")) {
+            _token = string_delete(_param, 1, 6);
+            break;
+        }
+        
+        // 2. Android Wrapper Check (The GitHub Issue Fix)
+        // The Reddit Android app uses this internal name for the parameter
+        if (string_starts_with(_param, "webbit_token=")) {
+            _token = string_delete(_param, 1, 13);
+            break;
+        }
+    }
+    
+    return _token;
 }

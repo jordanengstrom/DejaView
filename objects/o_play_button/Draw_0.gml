@@ -9,5 +9,3 @@ y = _cam_y + 340;
 image_xscale = 0.7;
 
 draw_self();
-
-//show_debug_message("username: ", global._username)

@@ -1,4 +1,3 @@
- // This will make sure we use the sessions' credentials
 http_set_request_crossorigin("use-credentials");
 
 /// @ignore

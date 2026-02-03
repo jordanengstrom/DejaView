@@ -25,7 +25,6 @@ draw_set_valign(fa_top);
 
 
 // DEBUG MODE
-// Background 
 //var _width = 335; 
 //var _height = 180;
 //var _x = 20; 
@@ -33,7 +32,6 @@ draw_set_valign(fa_top);
 
 //draw_sprite_stretched(s_card_frame, 0, _x, _y, _width, _height);
 
-//// Text Setup
 //var _center_x = _x + (_width / 2);
 //var _center_y = _y + (_height / 2);
 
@@ -41,12 +39,10 @@ draw_set_valign(fa_top);
 //draw_set_valign(fa_middle);
 //draw_set_color(c_maroon); 
 
-//// --- 1. GET DATA ---
 //var _base = reddit_get_base_url();
 //var _token = reddit_get_token();
 //var _full_url = _base + "/api/leaderboard?limit=3"; 
 
-//// Token Status
 //var _token_status = "MISSING";
 //if (_token != "noone" && string_length(_token) > 5) {
 //    _token_status = "OK (" + string_copy(_token, 1, 5) + "...)";
@@ -54,7 +50,6 @@ draw_set_valign(fa_top);
 //    _token_status = "ERROR: " + string(_token);
 //}
 
-//// URL Wrapping
 //var _display_url = "";
 //var _len = string_length(_full_url);
 //var _chunk_size = 28; 
@@ -62,13 +57,11 @@ draw_set_valign(fa_top);
 //    _display_url += string_copy(_full_url, i, _chunk_size) + "\n";
 //}
 
-//// --- BUILD DEBUG TEXT ---
 //var _debug_text = "--- DEBUG MODE ---\n";
 //_debug_text += "HTTP Code: " + string(global.debug_lb_status) + "\n"; // <--- NEW
 //_debug_text += "Token: " + _token_status + "\n";
 //_debug_text += "URL:\n" + _display_url;
 
-//// --- DRAW ---
 //draw_text_ext(_center_x, _center_y, _debug_text, 18, 300);
 
 //// Cleanup

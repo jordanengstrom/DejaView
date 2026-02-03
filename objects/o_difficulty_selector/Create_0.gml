@@ -1,13 +1,12 @@
-// SCOREBOARD SETTINGS
 if (!variable_global_exists("difficulty_setting")) {
     global.difficulty_setting = "medium";
 }
 
 global.score_rules = {
-    points_per_match: 200,    // 5 cards * 200 = 1000 base
-    completion_bonus: 500,    // Bonus for getting 5/5
-    max_time_bonus:   1000,   // Max speed points possible
-    points_drain_per_sec: 10  // Lose 10 points per second
+    points_per_match: 200,
+    completion_bonus: 500,
+    max_time_bonus:   1000,
+    points_drain_per_sec: 10
 };
 
 global.difficulty_mult = {
@@ -18,9 +17,6 @@ global.difficulty_mult = {
 
 global.player_score = 0;
 global.start_time = 0;
-
-
-// UI SETTINGS
 global.difficulty_setting = "medium";
 
 button_width = 90;

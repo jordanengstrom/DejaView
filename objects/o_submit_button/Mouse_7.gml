@@ -23,7 +23,7 @@ else {
         
         global.msg = "PERFECT SEQUENCE!";
     } else {
-        global.msg = "INCOMPLETE. " + string(_matches) + "/5 CORRECT.";
+        global.msg = string(_matches) + "/5 CORRECT";
     }
     
     var _mult = global.difficulty_mult[$ global.difficulty_setting];

@@ -1,35 +1,35 @@
-// Background 
-var _width = 335; 
+var _width = 335;
 var _height = 180;
-
-var _x = 20; 
+var _x = 20;
 var _y = 20;
+var _radius = 24;
 
-draw_sprite_stretched(s_card_frame, 0, _x, _y, _width, _height);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+var _shadow_color = make_colour_rgb(17, 27, 51);
+draw_set_color(_shadow_color);
+draw_roundrect_ext(_x + 6, _y + 8, _x + _width + 6, _y + _height + 8, _radius, _radius, false);
 
+var _body_color = make_colour_rgb(118, 152, 232);
+draw_set_color(_body_color);
+draw_roundrect_ext(_x, _y, _x + _width, _y + _height, _radius, _radius, false);
 
-// Text
 var _center_x = _x + (_width / 2);
 var _center_y = _y + (_height / 2);
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_set_color(c_navy);
 
-var _instruction_text = "Reassemble the order of images after they are shown in rapid sequence. Select difficulty level, then press play.";
-//draw_text_ext(_center_x, _center_y, _instruction_text, 25, 300);
 draw_set_font(fnt_aovel_sans_rounded_18);
+draw_set_colour(c_navy);
 draw_text_transformed(_center_x, _center_y - 55, "HOW TO PLAY", 1, 1, 0);
-var _sep = 75; // increased slightly for readability
-var _w = 300 / 0.25; // Allow wider text flow since we are scaling down
 
 draw_set_font(fnt_whyte_bold_13);
-//draw_text_ext(_center_x, _center_y, _instruction_text, 25, 300);
-var _sep = 25; // increased slightly for readability
-var _w = 300; // Allow wider text flow since we are scaling down
+var _instruction_text = "Reassemble the order of images after they are shown in rapid sequence. Select difficulty level, then press play.";
+var _sep = 25;
+var _w = 300;
 draw_text_ext_transformed(_center_x, _center_y + 30, _instruction_text, _sep, _w, 1, 1, 0);
 
-// Cleanup
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
@@ -40,7 +40,7 @@ draw_set_valign(fa_top);
 //var _x = 20; 
 //var _y = 20;
 
-//draw_sprite_stretched(s_card_frame, 0, _x, _y, _width, _height);
+//draw_sprite_stretched(s_card_frame_light, 0, _x, _y, _width, _height);
 
 //var _center_x = _x + (_width / 2);
 //var _center_y = _y + (_height / 2);

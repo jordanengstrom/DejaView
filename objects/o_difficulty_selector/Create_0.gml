@@ -27,17 +27,17 @@ options = [
     { 
         label: "EASY",   
         value: "easy",   
-        color: make_color_rgb(131, 202, 157) // #83CA9D (Sage Green)
+        color: make_color_rgb(38, 102, 32)
     },
     { 
         label: "MED", 
         value: "med", 
-        color: make_color_rgb(234, 194, 130) // #EAC282 (Sand Gold)
+        color: make_color_rgb(229, 192, 0)
     },
     { 
         label: "HARD",   
         value: "hard",   
-        color: make_color_rgb(224, 123, 123) // #E07B7B (Muted Rose)
+        color: make_color_rgb(102, 5, 5)
     }
 ];
 

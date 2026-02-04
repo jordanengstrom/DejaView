@@ -111,6 +111,7 @@
     {"id":{"name":"s_axe","path":"sprites/s_axe/s_axe.yy",},},
     {"id":{"name":"s_backpack","path":"sprites/s_backpack/s_backpack.yy",},},
     {"id":{"name":"s_bow","path":"sprites/s_bow/s_bow.yy",},},
+    {"id":{"name":"s_card_frame_light","path":"sprites/s_card_frame_light/s_card_frame_light.yy",},},
     {"id":{"name":"s_card_frame","path":"sprites/s_card_frame/s_card_frame.yy",},},
     {"id":{"name":"s_coin","path":"sprites/s_coin/s_coin.yy",},},
     {"id":{"name":"s_dagger","path":"sprites/s_dagger/s_dagger.yy",},},

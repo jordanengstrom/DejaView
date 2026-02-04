@@ -8,7 +8,7 @@ switch (global.difficulty_setting) {
     case "easy":
         frames = 60;
         break;
-    case "medium":
+    case "med":
         frames = 30;
         break;
     case "hard":

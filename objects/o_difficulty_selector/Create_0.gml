@@ -1,5 +1,5 @@
 if (!variable_global_exists("difficulty_setting")) {
-    global.difficulty_setting = "medium";
+    global.difficulty_setting = "med";
 }
 
 global.score_rules = {
@@ -11,13 +11,13 @@ global.score_rules = {
 
 global.difficulty_mult = {
     easy: 0.5,
-    medium: 1.0,
+    med: 1.0,
     hard:   2.0
 };
 
 global.player_score = 0;
 global.start_time = 0;
-global.difficulty_setting = "medium";
+global.difficulty_setting = "med";
 
 button_width = 90;
 button_height = 50;
@@ -30,8 +30,8 @@ options = [
         color: make_color_rgb(131, 202, 157) // #83CA9D (Sage Green)
     },
     { 
-        label: "MEDIUM", 
-        value: "medium", 
+        label: "MED", 
+        value: "med", 
         color: make_color_rgb(234, 194, 130) // #EAC282 (Sand Gold)
     },
     { 

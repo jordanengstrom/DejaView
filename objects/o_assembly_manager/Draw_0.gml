@@ -54,9 +54,10 @@ for (var i = 0; i < array_length(global.display_order); i++) {
             draw_set_color(c_navy);
         }
         
+		draw_set_font(fnt_whyte_bold_32);
         draw_set_halign(fa_right);
         draw_set_valign(fa_middle);
-        draw_text_transformed(_x + card_w - 20, _y + (card_h / 2), string(_selection_index), 2, 2, 0);
+        draw_text_transformed(_x + card_w - 20, _y + (card_h / 2), string(_selection_index), 1, 1, 0);
     }
 }
 

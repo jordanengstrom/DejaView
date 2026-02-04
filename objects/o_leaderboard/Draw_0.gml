@@ -10,6 +10,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 
 draw_set_color(c_navy);
+draw_set_font(fnt_verdana_regular_14)
 draw_text(_x + (_w / 2), _y + 15, "--- TODAY'S TOP 3 ---");
 
 var _start_text_y = _y + 50;

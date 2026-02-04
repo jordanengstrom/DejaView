@@ -1,6 +1,7 @@
 var _start_x = (room_width - total_w) / 2;
 var _start_y = 230; 
 
+draw_set_font(fnt_verdana_bold_13);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 

@@ -16,8 +16,18 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(c_navy);
 
-var _instruction_text = "HOW TO PLAY\n\nReassemble the order of images after they are shown in rapid sequence. Select difficulty level, then press play.";
-draw_text_ext(_center_x, _center_y, _instruction_text, 25, 300);
+var _instruction_text = "Reassemble the order of images after they are shown in rapid sequence. Select difficulty level, then press play.";
+//draw_text_ext(_center_x, _center_y, _instruction_text, 25, 300);
+draw_set_font(fnt_aovel_sans_rounded_18);
+draw_text_transformed(_center_x, _center_y - 55, "HOW TO PLAY", 1, 1, 0);
+var _sep = 75; // increased slightly for readability
+var _w = 300 / 0.25; // Allow wider text flow since we are scaling down
+
+draw_set_font(fnt_whyte_bold_13);
+//draw_text_ext(_center_x, _center_y, _instruction_text, 25, 300);
+var _sep = 25; // increased slightly for readability
+var _w = 300; // Allow wider text flow since we are scaling down
+draw_text_ext_transformed(_center_x, _center_y + 30, _instruction_text, _sep, _w, 1, 1, 0);
 
 // Cleanup
 draw_set_halign(fa_left);
@@ -35,6 +45,7 @@ draw_set_valign(fa_top);
 //var _center_x = _x + (_width / 2);
 //var _center_y = _y + (_height / 2);
 
+//draw_set_font(global.main_font);
 //draw_set_halign(fa_center);
 //draw_set_valign(fa_middle);
 //draw_set_color(c_maroon); 

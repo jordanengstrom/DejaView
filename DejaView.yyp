@@ -10,6 +10,7 @@
   },
   "defaultScriptType":0,
   "Folders":[
+    {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"buttons","folderPath":"folders/Objects/buttons.yy","name":"buttons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"controllers","folderPath":"folders/Objects/controllers.yy","name":"controllers","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -23,6 +24,7 @@
   ],
   "ForcedPrefabProjectReferences":[
     {"link":"io.gamemaker.gm_filter_underwater-1.0.0","name":"io.gamemaker.gm_filter_underwater-1.0.0","path":"io.gamemaker.gm_filter_underwater-1.0.0.yyp",},
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
   ],
   "IncludedFiles":[],
   "isEcma":false,
@@ -32,6 +34,14 @@
   },
   "name":"DejaView",
   "resources":[
+    {"id":{"name":"fnt_aovel_sans_rounded_18","path":"fonts/fnt_aovel_sans_rounded_18/fnt_aovel_sans_rounded_18.yy",},},
+    {"id":{"name":"fnt_aovel_sans_rounded_30","path":"fonts/fnt_aovel_sans_rounded_30/fnt_aovel_sans_rounded_30.yy",},},
+    {"id":{"name":"fnt_arial_black_regular_32","path":"fonts/fnt_arial_black_regular_32/fnt_arial_black_regular_32.yy",},},
+    {"id":{"name":"fnt_verdana_bold_13","path":"fonts/fnt_verdana_bold_13/fnt_verdana_bold_13.yy",},},
+    {"id":{"name":"fnt_verdana_bold_26","path":"fonts/fnt_verdana_bold_26/fnt_verdana_bold_26.yy",},},
+    {"id":{"name":"fnt_verdana_regular_14","path":"fonts/fnt_verdana_regular_14/fnt_verdana_regular_14.yy",},},
+    {"id":{"name":"fnt_whyte_bold_13","path":"fonts/fnt_whyte_bold_13/fnt_whyte_bold_13.yy",},},
+    {"id":{"name":"fnt_whyte_bold_32","path":"fonts/fnt_whyte_bold_32/fnt_whyte_bold_32.yy",},},
     {"id":{"name":"o_armour","path":"objects/o_armour/o_armour.yy",},},
     {"id":{"name":"o_assembly_manager","path":"objects/o_assembly_manager/o_assembly_manager.yy",},},
     {"id":{"name":"o_axe_2","path":"objects/o_axe_2/o_axe_2.yy",},},

@@ -27,12 +27,12 @@ options = [
     { 
         label: "EASY",   
         value: "easy",   
-        color: make_color_rgb(16, 5, 54)
+        color: make_color_rgb(44, 12, 145)
     },
     { 
         label: "MED", 
         value: "med", 
-        color: make_color_rgb(33, 10, 107)
+        color: make_color_rgb(44, 12, 145)
     },
     { 
         label: "HARD",   

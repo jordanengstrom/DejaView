@@ -18,7 +18,6 @@ for (var i = 0; i < array_length(global.display_order); i++) {
     var _is_selected = (_selection_index != -1);
     
     var _bg_col = make_color_rgb(102, 132, 204);
-	draw_set_alpha(255);
     var _border_col = make_colour_rgb(17, 27, 51);
     
     if (_is_selected) {

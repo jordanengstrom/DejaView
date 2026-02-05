@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"o_exit_button",
+  "%Name":"o_replay_button",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_exit_button",
+  "name":"o_replay_button",
   "overriddenProperties":[],
   "parent":{
     "name":"buttons",
@@ -30,13 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_exit_button",
-    "path":"sprites/s_exit_button/s_exit_button.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
-  "tags":[
-    "exit",
-  ],
   "visible":true,
 }

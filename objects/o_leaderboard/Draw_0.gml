@@ -5,7 +5,11 @@ var _y = y + 40;
 var _h = 40 + (3 * 25) + 20;
 var _radius = 24;
 
-var _body_color = make_colour_rgb(118, 152, 232);
+var _shadow_color = make_colour_rgb(13, 49, 132);
+draw_set_color(_shadow_color);
+draw_roundrect_ext(_x + 6, _y + 8, _x + _w + 6, _y + _h + 8, _radius, _radius, false);
+
+var _body_color = make_colour_rgb(127, 166, 255);
 draw_set_color(_body_color);
 draw_roundrect_ext(_x, _y, _x + _w, _y + _h, _radius, _radius, false);
 

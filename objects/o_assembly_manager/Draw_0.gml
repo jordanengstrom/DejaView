@@ -22,7 +22,7 @@ for (var i = 0; i < array_length(global.display_order); i++) {
     var _border_col = make_colour_rgb(17, 27, 51);
     
     if (_is_selected) {
-        _bg_col = make_color_rgb(118, 152, 232);
+        _bg_col = make_colour_rgb(127, 166, 255);
     }
 
     draw_set_color(_bg_col);
@@ -40,12 +40,8 @@ for (var i = 0; i < array_length(global.display_order); i++) {
         
         var _is_removable = (_selection_index == array_length(global.user_selection));
         
-        if (_is_removable) {
-            draw_set_color(c_navy);
-        } else {
-            draw_set_color(c_navy);
-        }
-        
+        draw_set_color(c_navy);
+
 		draw_set_font(fnt_whyte_bold_32);
         draw_set_halign(fa_right);
         draw_set_valign(fa_middle);

@@ -21,7 +21,7 @@ draw_set_valign(fa_middle);
 var _is_win = (string_pos("PERFECT", global.msg) > 0);
 if (_is_win) {
 	draw_set_font(fnt_verdana_bold_26);
-    _col = make_color_rgb(38, 102, 32);
+    _col = make_colour_rgb(255, 215, 0);
     draw_set_color(_col);
     draw_text_transformed(_center_x, _center_y - 80, "VICTORY!", 1, 1, 0);
     
@@ -60,4 +60,3 @@ if (!is_undefined(global.my_rank_info)) {
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-draw_set_color(c_white); 

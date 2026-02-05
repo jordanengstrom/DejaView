@@ -6,11 +6,11 @@ var _radius = 24;
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-var _shadow_color = make_colour_rgb(17, 27, 51);
+var _shadow_color = make_colour_rgb(13, 49, 132);
 draw_set_color(_shadow_color);
 draw_roundrect_ext(_x + 6, _y + 8, _x + _width + 6, _y + _height + 8, _radius, _radius, false);
 
-var _body_color = make_colour_rgb(118, 152, 232);
+var _body_color = make_colour_rgb(127, 166, 255);
 draw_set_color(_body_color);
 draw_roundrect_ext(_x, _y, _x + _width, _y + _height, _radius, _radius, false);
 
@@ -21,7 +21,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 draw_set_font(fnt_aovel_sans_rounded_18);
-draw_set_colour(c_navy);
+draw_set_colour(c_black);
 draw_text_transformed(_center_x, _center_y - 55, "HOW TO PLAY", 1, 1, 0);
 
 draw_set_font(fnt_whyte_bold_13);

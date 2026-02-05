@@ -8,7 +8,6 @@ global.debug_lb_response = "";
 global.main_font = fnt_aovel_sans_rounded_30;
 draw_set_font(global.main_font);
 
-// --- DESIGN PALETTE (Based on Splash Page) ---
 global.pal = {
     // Backgrounds
     bg_dark:      $2A170F, // Web: #0f172a (Deep Slate) - Main BG
@@ -25,7 +24,6 @@ global.pal = {
     success:      $50C878, // Emerald Green - Correct matches
 };
 
-// Set the global default font color
 draw_set_color(global.pal.text_dark);
 
 api_load_state(function(_status, _ok, _result, _payload) {
@@ -40,5 +38,4 @@ api_load_state(function(_status, _ok, _result, _payload) {
 	}
 });
 
-// This makes draw_roundrect_ext() look perfectly smooth instead of octagonal
 draw_set_circle_precision(64);

@@ -1,4 +1,4 @@
-loading_status = "Loading Top Scores...";
+loading_status = "\nLoading top scores...";
 top_scores = [];
 my_rank_data = undefined;
 
@@ -25,7 +25,7 @@ api_get_leaderboard(3, function(_status, _ok, _result, _payload) {
             } 
             else {
                 top_scores = [];
-                loading_status = "No data found";
+                loading_status = "\n...so far, so empty...";
             }
             
         } catch (_ex) {

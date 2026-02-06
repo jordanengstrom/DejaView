@@ -10,8 +10,8 @@
   "name":"o_difficulty_selector",
   "overriddenProperties":[],
   "parent":{
-    "name":"controllers",
-    "path":"folders/Objects/controllers.yy",
+    "name":"buttons",
+    "path":"folders/Objects/buttons.yy",
   },
   "parentObjectId":null,
   "persistent":false,

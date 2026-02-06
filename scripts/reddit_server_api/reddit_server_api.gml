@@ -39,6 +39,11 @@ function api_load_state(_callback) {
 }
 
 function api_submit_score(_score, _callback) {
+	if (!is_real(_score) || _score <= 0) {
+        if (is_callable(_callback)) _callback(undefined);
+        return;
+    }
+	
     var _url = reddit_get_base_url() + "/api/score";
     var _headers = ds_map_create();
     ds_map_add(_headers, "Content-Type", "application/json");

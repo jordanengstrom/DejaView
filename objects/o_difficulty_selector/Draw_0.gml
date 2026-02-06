@@ -13,24 +13,44 @@ for (var i = 0; i < array_length(options); i++) {
     var _y2 = _y1 + button_height;
     var _center_x = _x1 + (button_width / 2);
     var _center_y = _y1 + (button_height / 2);
+	var _hover = point_in_rectangle(mouse_x, mouse_y, _x1, _y1, _x2, _y2);
+	var _width = button_width;
+	var _height = button_height;
     
     var _is_selected = (global.difficulty_setting == options[i].value);
+	var _shadow_color = make_colour_rgb(15, 6, 45);
+	var _body_color = make_colour_rgb(136, 124, 175);
     
-    if (_is_selected) {
-        draw_set_color(options[i].color);
-		draw_roundrect_ext(_x1, _y1, _x2, _y2, _radius, _radius, false);
-        draw_set_color(options[i].color);
-		draw_roundrect_ext(_x1, _y1, _x2, _y2, _radius, _radius, true);
-    } else {
-		_col = make_colour_rgb(17, 27, 51);
+
+	if (!_hover && !_is_selected) {
+		draw_set_colour(_shadow_color);
+		draw_roundrect_ext(_x1 + 6, _y1 + 8, _x1 + _width + 6, _y1 + _height + 8, _radius, _radius, false);  // shadow
+		_col = make_colour_rgb(17, 27, 51); // new/neutral color
         draw_set_color(_col);
-		draw_roundrect_ext(_x1, _y1, _x2, _y2, _radius, _radius, false);
-        draw_set_color(options[i].color);
-		draw_roundrect_ext(_x1, _y1, _x2, _y2, _radius, _radius, true);
+		draw_roundrect_ext(_x1, _y1, _x2, _y2, _radius, _radius, false);  // fill
+		draw_roundrect_ext(_x1, _y1, _x2, _y2, _radius, _radius, true);  // outline
+		draw_set_colour(c_gray);
+		draw_text(_center_x, _center_y, options[i].label);
     }
-    
-    draw_set_color(c_white);
-    draw_text(_center_x, _center_y, options[i].label);
+    if (_is_selected) {
+		draw_set_color(_shadow_color);  
+		draw_roundrect_ext(_x1 + 6, _y1 + 8, _x1 + _width + 6, _y1 + _height + 8, _radius, _radius, false);  // shadow
+        draw_set_color(_body_color);
+		draw_roundrect_ext(_x1, _y1, _x2, _y2, _radius, _radius, false);  // fill
+		draw_roundrect_ext(_x1, _y1, _x2, _y2, _radius, _radius, true);  // outline
+		draw_set_colour(c_white);
+		draw_text(_center_x, _center_y, options[i].label);
+    } 
+	if (_hover) {
+		draw_set_colour(_shadow_color);
+		draw_roundrect_ext(_x1 + 6, _y1 + 8, _x1 + _width + 6, _y1 + _height + 8, _radius, _radius, false);  // shadow
+		_body_color = make_colour_rgb(197, 183, 241);
+		draw_set_color(_body_color);
+		draw_roundrect_ext(_x1, _y1, _x2, _y2, _radius, _radius, false);
+		draw_roundrect_ext(_x1, _y1, _x2, _y2, _radius, _radius, true);  // outline
+		draw_set_colour(c_white);
+		draw_text(_center_x, _center_y, options[i].label);
+    } 
 }
 
 draw_set_halign(fa_left);

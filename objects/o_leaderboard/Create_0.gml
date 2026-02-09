@@ -1,4 +1,4 @@
-loading_status = "Loading Top Scores...";
+loading_status = "\nLoading top scores...";
 top_scores = [];
 my_rank_data = undefined;
 
@@ -10,6 +10,10 @@ api_get_leaderboard(3, function(_status, _ok, _result, _payload) {
     } else {
         global.debug_lb_response = _result;
     }
+	show_debug_message("_status: ", _status);
+	show_debug_message("_ok: ", _ok);
+	show_debug_message("_result: ", _result);
+	show_debug_message("_payload: ", _payload);
     if (_ok) {
         try {
             var _json = json_parse(_result);
@@ -21,11 +25,10 @@ api_get_leaderboard(3, function(_status, _ok, _result, _payload) {
                 if (variable_struct_exists(_json, "me")) {
                     my_rank_data = _json.me;
                 }
-                loading_status = "Loaded";
             } 
             else {
                 top_scores = [];
-                loading_status = "No data found";
+                loading_status = "\n...so far, so empty...";
             }
             
         } catch (_ex) {

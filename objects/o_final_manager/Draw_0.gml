@@ -1,4 +1,4 @@
- var _margin = 20;
+var _margin = 20;
 var _x = _margin;
 var _y = _margin;
 var _width = room_width - (_margin * 2);
@@ -50,11 +50,11 @@ if (!is_undefined(global.my_rank_info)) {
     
     draw_set_color(c_ltgray);
 	draw_set_font(fnt_verdana_bold_13);
-    draw_text_transformed(_center_x, _center_y + 60, "Rank: " + string(_my_rank), 1, 1, 0);
+    draw_text_transformed(_center_x, _center_y + 60, "Your daily rank: " + string(_my_rank), 1, 1, 0);
     
     if (_best_score > global.player_score) {
 		 draw_set_font(fnt_verdana_bold_13);
-         draw_text_transformed(_center_x, _center_y + 80, "(High Score: " + string(_best_score) + ")", 1, 1, 0);
+         draw_text_transformed(_center_x, _center_y + 80, "(Your daily high score: " + string(_best_score) + ")", 1, 1, 0);
     }
 }
 

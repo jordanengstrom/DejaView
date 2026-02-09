@@ -99,6 +99,7 @@
     {"id":{"name":"r_final","path":"rooms/r_final/r_final.yy",},},
     {"id":{"name":"r_lobby","path":"rooms/r_lobby/r_lobby.yy",},},
     {"id":{"name":"r_main","path":"rooms/r_main/r_main.yy",},},
+    {"id":{"name":"get_leaderboard","path":"scripts/get_leaderboard/get_leaderboard.yy",},},
     {"id":{"name":"get_random_objects_from_tag","path":"scripts/get_random_objects_from_tag/get_random_objects_from_tag.yy",},},
     {"id":{"name":"reddit_functions","path":"scripts/reddit_functions/reddit_functions.yy",},},
     {"id":{"name":"reddit_server_api","path":"scripts/reddit_server_api/reddit_server_api.yy",},},

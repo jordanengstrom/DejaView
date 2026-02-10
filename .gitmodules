@@ -1,0 +1,3 @@
+[submodule "deja-view-game"]
+	path = deja-view-game
+	url = https://github.com/jordanengstrom/deja-view-game.git
